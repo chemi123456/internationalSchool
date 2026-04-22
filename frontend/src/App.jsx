@@ -3,7 +3,7 @@ import axios from "axios";
 import StudentForm from "./components/StudentForm";
 import StudentList from "./components/StudentList";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://internationalschool-production.up.railway.app/api";
 
 export default function App() {
   const [students, setStudents] = useState([]);
