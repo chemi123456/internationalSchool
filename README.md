@@ -1,56 +1,31 @@
-# MERN Item Manager
+# International School Management System (MERN)
 
-A complete starter MERN project for a lab test. It includes:
-- Separate **frontend** and **backend**
-- MongoDB Atlas connection via `.env`
-- CRUD APIs for items
-- Added **module** field as requested
-- Basic React UI
-- Ready to push to GitHub and deploy separately
-
-## Features
-- Add item
-- View items
-- Update item
-- Delete item
-- Fields: `name`, `quantity`, `module`, `category`, `description`
+A full-stack MERN application for managing student enrollments and school records.
 
 ## Project Structure
-```text
-mern_item_manager_complete/
-  backend/
-  frontend/
-```
+- `backend/`: Node.js/Express API with MongoDB
+- `frontend/`: React/Vite application
 
-## Backend Setup
-```bash
-cd backend
-npm install
-cp .env.example .env
-# update MONGO_URI in .env
-npm run dev
-```
+## Setup Instructions
 
-## Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
+### Backend
+1. `cd backend`
+2. `npm install`
+3. Create a `.env` file (see `.env.example`) and add your `MONGODB_URI`
+4. `npm run dev`
 
-## Default Ports
-- Backend: `5000`
-- Frontend: `5173`
+### Frontend
+1. `cd frontend`
+2. `npm install`
+3. Create a `.env` file if needed (see `.env.example`)
+4. `npm run dev`
+
+## Features
+- Student enrollment form
+- Real-time student directory
+- Update/Delete student records
+- Responsive design
 
 ## Deployment
-- Frontend: Netlify / Vercel
-- Backend: Render / Railway
-
-Before deployment:
-- Set `MONGO_URI` in backend environment variables
-- Set `VITE_API_URL` in frontend environment variables to deployed backend URL + `/api`
-
-Example:
-```env
-VITE_API_URL=https://your-backend-url.onrender.com/api
-```
+- **Backend**: Deploy to Render or Railway. Set environment variables for `MONGODB_URI` and `PORT`.
+- **Frontend**: Deploy to Vercel or Netlify. Set `VITE_API_URL` to your deployed backend URL.
